@@ -71,13 +71,12 @@ wow.init();
 
  $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
-          $('#mainNav').removeClass('cabecera-hidden');
+          $('#').removeClass('cabecera-hidden');
       }
       else {
-          $('#mainNav').addClass('cabecera-hidden');
+          $('#').addClass('cabecera-hidden');
       }
   });
-
 /******************************* G SUITE NUEVO *************************/
 
 

@@ -7,16 +7,14 @@ angular.module( 'edosoft', [
 
     .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider) {
 
-        $urlRouterProvider.otherwise( '/home' );
-
-        /*$locationProvider.html5Mode({
-          enabled: true,
-          requireBase: true
-        });*/
+          $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+          });
 
         $stateProvider
             .state('home',{
-                url:'/home',
+                url:'/',
                 views: {
                    "main": {
                       controller: 'HomeCtrl',
@@ -162,10 +160,6 @@ angular.module( 'edosoft', [
   })
 
     .controller( 'AppCtrl', function AppCtrl ( $scope, $location, $window,$state) {
-            $(window).bind('beforeunload', function () {
-              console.log('Chupate esa que es de fresa',$state.current);
-
-            });
           console.log('AppCtrl',$state.current,$scope.pageTitle);
     })
 
