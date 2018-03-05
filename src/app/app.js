@@ -7,14 +7,16 @@ angular.module( 'edosoft', [
 
     .config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider) {
 
-          $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
-          });
+        $urlRouterProvider.otherwise( '/home' );
+
+        /*$locationProvider.html5Mode({
+          enabled: true,
+          requireBase: true
+        });*/
 
         $stateProvider
             .state('home',{
-                url:'/',
+                url:'/home',
                 views: {
                    "main": {
                       controller: 'HomeCtrl',
