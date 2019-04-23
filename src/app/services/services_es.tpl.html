@@ -1,0 +1,565 @@
+<!-- Navigation  -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top principalnavitation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+            </button>
+            <a ui-sref="home"><img  class="dropdown " ng-click="scrollTo('myCarousel')" src="assets/img/logo-blue.png" alt="Edosoft Factory"  style=" margin-top:20px; width:100%; max-width:200px"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden"><a href="#page-top"></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" ui-sref="home" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Qué hacemos
+                    </a>
+                    <div class="dropdown-menu">
+                        <div>
+                            <a class="dropdown-item" ui-sref="services" ui-sref-active="active">Asociado a Gougle Cloud</a>
+                            <p class="dropdown-item nav-divider"></p>
+                            <a class="dropdown-item" ui-sref="iplusd">Investigación + Desarrollo</a>
+                            <p class="dropdown-item nav-divider"></p>
+                            <a class="dropdown-item" ui-sref="cif">Consultoría / Factoría</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="page-scroll" ui-sref="team">Quiénes somos</a></li>
+                <li><a class="page-scroll" ui-sref="contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- /Navigation end -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Tittle background-->
+<div id="services" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="BigTitle servicios-title wow animated fadeInLeft animated">Qué hacemos</h2>
+        </div>
+    </div>
+</div>
+<!--Tittle background end-->
+<!--Services section-->
+<!--G SUITE section-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>
+                <div class="blue-indicator-tittle"></div>
+                Inspírate con nuestro asesoramiento técnico y comienza a innovar con G Suite
+            </h4>
+            <img class="img-gsuite" src="assets/img/gsuite.png" alt="G Suite">
+        </div>
+    </div>
+</div>
+<section class="sectioncolour2">
+    <div class="container">
+        <div class="row">
+            <div class="quote-green">
+                <div>
+                    <br>
+                    <br>
+                    <h5 class="white-tittle">Migrar a G Suite ya supone un incremento de la productividad de la empresa, pero con el asesoramiento continuo de Edosoft Factory, compañías como la suya podrán alcanzar la excelencia tecnológica a mayor velocidad. Edosoft Factory se encarga de todo el proceso junto a sus clientes, trabajando desde la implantación a la migración de datos y el soporte y utilizando la tecnología de Google de formas innovadoras para aportar valor a sus clientes.</h5>
+                    <br>
+                    <br>
+                </div>
+                <div style="margin-right:45px;" class="col-md-8 rectangle-10 pull-right background-photo1 wow animated fadeInRight animated" alt="Edosoft Metodología"></div>
+                <br>
+                <br>
+            </div>
+    </div>
+    <div class="container">
+        <!--G SUITE iconos-->
+        <!--Aquí empieza g suite iconos-->
+        <div id="mas" class="rectangle-1">
+            <div class="row gsuite-large lateral-padding">
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" id="gmailicon">
+                    <img id="gmail-indicator" class="gsuite-icons" src="assets/img/gmailicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-gmail')" alt="G Mail icon">
+                    <div ng-show="showgmail" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.1s" id="hangoutsicon">
+                    <img id="hangouts-indicator" class="gsuite-icons" src="assets/img/hangoutsicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-hangouts')" alt="Hangout icon">
+                    <div ng-show="showhangouts" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.2s" id="calendaricon">
+                    <img id="calendar-indicator" class="gsuite-icons" src="assets/img/calendaricon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-calendar')" alt="Calendar icon">
+                    <div ng-show="showcalendar" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.3s" id="g+icon">
+                    <img id="g+-indicator" class="gsuite-icons" src="assets/img/g+icon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-gplus')" alt="Google+ icon">
+                    <div ng-show="showgplus" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.4s" id="docsicon">
+                    <img id="docs-indicator" class="gsuite-icons" src="assets/img/docsicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-docs')" alt="Doc icon">
+                    <div ng-show="showdocs" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.5s" id="spreadsheeticon">
+                    <img id="spreadsheets-indicator" class="gsuite-icons" src="assets/img/spreadsheeticon.png" style="cursor:pointer" ng-click="openInNewWindow('show-spreadsheets')" style="cursor:pointer" width="40px" height="45px" alt="Spread Sheet icon">
+                    <div ng-show="showspreadsheets" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.6s" id="formicon">
+                    <img id="forms-indicator" class="gsuite-icons" src="assets/img/formicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-forms')" alt="Form icon">
+                    <div ng-show="showforms" class="indicator" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.7s" id="slideicon">
+                    <img id="slides-indicator" class="gsuite-icons" src="assets/img/slideicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-slides')" alt="Slide icon">
+                    <div ng-show="showslides" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.8s" id="sitesicon">
+                    <img id="sites-indicator" class="gsuite-icons" src="assets/img/sitesicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-sites')" alt="Site icon">
+                    <div ng-show="showsites" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="0.9s" id="driveicon">
+                    <img id="drive-indicator" class="gsuite-icons" src="assets/img/driveicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-drives')" alt="Drive icon">
+                    <div ng-show="showdrives" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="1.0s" id="adminicon">
+                    <img id="admin-indicator" class="gsuite-icons" src="assets/img/adminicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-admin')" alt="Admin icon">
+                    <div ng-show="showadmin" class="indicator"></div>
+                </div>
+                <div class="col-sm-1 wow animated fadeInLeft animated withmargin" data-wow-delay="1.1s" id="keepicon">
+                    <img id="keep-indicator" class="gsuite-icons" src="assets/img/keepicon.png" style="cursor:pointer" width="40px" height="45px" ng-click="openInNewWindow('show-keeps')" alt="Keep icon">
+                    <div ng-show="showkeeps" class="indicator"></div>
+                </div>
+            </div>
+            <div class="gsuite-large lateral-padding gicons-description wow animated fadeIn animated" data-wow-delay="1.2s">
+                <div ng-show="showgmail" class="row" id="gmail-description">
+                    <div class="col-md-4">
+                        <h5><b>Gmail</b></h5>
+                        <p>La comunicación no es solo por correo: el chat y el vídeo han llegado a la empresa. Correo electrónico empresarial para su dominio, con todas las funciones centralizadas en su bandeja de entrada. Puede trabajar donde quiera, con el dispositivo que prefiera y sin perder efectividad. 99.9% de tiempo de actividad garantizado y 0% de tiempo de inactividad planificado.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/thegmailapp.png" width="700" alt="G Mail G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showhangouts" class="row" id="hangouts-description">
+                    <div class="col-md-4">
+                        <h5><b>Hangouts</b></h5>
+                        <p>Videoconferencias en alta definición con todo su equipo, con función integrada de pantalla compartida, en cualquier lugar y de uso muy sencillo. Comuníquese por vídeo de la misma forma que en persona: la pantalla muestra automáticamente a la persona que esté hablando en cada momento y el sonido se silencia de forma inteligente para evitar ruidos. Da igual dónde esté su cliente, sentirá que lo tiene delante.</p>
+                    </div>
+                    <div class="col-md-8">
+
+                        <img class="imgmail" src="assets/img/hangoutsmock.png" width="700" alt="Hangout G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showcalendar" class="row" id="calendar-description">
+                    <div class="col-md-4">
+                        <h5><b>Calendar</b></h5>
+                        <p>Programación inteligente de reuniones y administración de varios calendarios bajo una única vista para un trabajo más eficaz. Calendar se encarga de “encontrar un hueco” por usted para que no tenga que consultar varios calendarios de forma independiente. Comparta sus calendarios para que las personas vean los detalles completos de un evento o simplemente para que sepan si está disponible.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/calendarmock.png" width="700" alt="Calendar G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showgplus" ng-show="showcalendar" class="row" id="g+-description">
+                    <div class="col-md-4">
+                        <h5><b>Google +</b></h5>
+                        <p>Captación del interés de todo su equipo de trabajo compartiendo experiencias para derribar barreras y generar ideas nuevas desde cualquier lugar. Independientemente de sus equipos, niveles o ubicaciones, las ideas de su empresa formarán parte de una comunidad unida a través de publicaciones y comentarios en Google+. Las mismas metas e ilusiones compartidas por todo un equipo remando en la misma dirección, aunque se encuentren en direcciones opuestas.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/googlemock.jpg" width="700" alt="Google+ G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showdocs" class="row" id="docs-description">
+                    <div class="col-md-4">
+                        <h5><b>Docs</b></h5>
+                        <p>Con sus propios compañeros o con personas ajenas a su empresa, visualice instantáneamente los cambios que introducen los demás o acceda al historial de revisión ilimitado. Las versiones anteriores se guardan indefinidamente y no consumen espacio de almacenamiento. Además puede importar sus documentos para editarlos al instante y exportar su trabajo al formato que necesite, sin instalaciones de software adicional.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/docsmock.png" width="700" alt="Doc G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showspreadsheets" class="row" id="spreadsheets-description">
+                    <div class="col-md-4">
+                        <h5><b>Sheets</b></h5>
+                        <p>Desde las más sencillas fórmulas hasta potentes funciones y gráficos complejos que le permitirán generar informes de tablas dinámicas y agregar filtros, entre otras operaciones. Trabajo profesional propio de cualquier hoja de cálculo accesible tanto desde su ordenador en la oficina como desde su móvil e incluso sin conexión.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/sheetsmock.png" width="700" alt="Sheet G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showforms" class="row" id="forms-description">
+                    <div class="col-md-4">
+                        <h5><b>Forms</b></h5>
+                        <p>Todo el ciclo de vida de su investigación resumido en una sola aplicación y sin ningún cargo adicional. Crear un formulario es tan fácil y rápido como trabajar sobre un documento y le permitirá crear encuestas a nivel profesional. Solo arrastrar y soltar para organizar las preguntas, con acceso a todas las respuestas y los análisis de resultados en spreadsheets y en tiempo real.</p>                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/formmock.png" width="700" alt="Form G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showslides" class="row" id="slides-description">
+                    <div class="col-md-4">
+                        <h5><b>Slides</b></h5>
+                        <p>Las presentaciones en el formato más seguro, sin cambios imprevistos y con acceso online y offline. Las diapositivas son fáciles de crear bien a partir de una plantilla o bien personalizando el diseño desde cero. Afiance la comunicación visual de su empresa en unos pocos pasos, a nivel profesional.<>/p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/slidesmock.png" width="700" alt="Slide G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showsites" class="row" id="sites-description">
+                    <div class="col-md-4">
+                        <h5><b>Sites</b></h5>
+                        <p>Todo su equipo puede tener acceso a la web de su propio departamento o proyecto, y será una web profesional. Es la forma más sencilla de crear un sitio, con acceso directo a todo su contenido en drive, documentos o incluso el calendario. Aproveche los temas creados especialmente para que su contenido destaque con un aspecto optimizado automáticamente en todos los dispositivos.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/sitesmock.png" width="700" alt="Sites G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showdrives" class="row" id="drive-description">
+                    <div class="col-md-4">
+                        <h5><b>Drive</b></h5>
+                        <p>Todo el almacenamiento que necesite, con sus archivos sincronizados automáticamente y sin software adicional. Todo su trabajo estará en un lugar seguro mediante el almacenamiento de archivos en línea para que acceda a él cuando lo necesite y desde dónde lo necesite. 30Gb, 1Tb o almacenamiento ilimitado y sincronizado con la carpeta enlazada en su ordenador, cualquier cambio local se sincronizará en Drive automáticamente y viceversa.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/drivemock.png" width="700" alt="Drive G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showadmin" class="row" id="admin-description">
+                    <div class="col-md-4">
+                        <h5><b>Admin</b></h5>
+                        <p>Asistencia y confiabilidad todos los días durante las 24 horas, con la mayor seguridad y control aplicada también a dispositivos móviles. La administración centralizada le permite una configuración y una gestión rápidas y fáciles, con la posibilidad de agregar y quitar usuarios, configurar grupos y agregar diversas opciones de seguridad. Y con la administración de dispositivos móviles puede distribuir aplicaciones, administrar la configuración de seguridad o incluso borrar los dispositivos de forma remota.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/adminmock.png" width="700" alt="Admin G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+                <div ng-show="showkeeps" class="row" id="keep-description">
+                    <div class="col-md-4">
+                        <h5><b>Vault</b></h5>
+                        <p>Archivo tanto de correo electrónico como de chat y búsquedas con la tecnología de Google para encontrar contenido rápidamente. Usted decide durante cuánto tiempo se conservarán los mensajes de correo electrónico y los chats registrados, especificando políticas adaptadas a sus necesidades. Nunca volverá a perder información valiosa, puede recuperarla incluso de cuentas cerradas para evitar la pérdida de datos debido a la rotación de personal.</p>
+                    </div>
+                    <div class="col-md-8">
+                        <img class="imgmail" src="assets/img/vaultmock.png" width="700" alt="Vault G Suite" class="wow animated fadeIn">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="wow animated fadeInUp animated btn btn-lg button-green" href="https://www.youtube.com/edosoftfactory" target="_blank">Consejos para usar G Suite</a>
+                </div>
+            </div>
+        </div>
+        <!-- FIN Nuevo apartado G SUITE-->
+    </div>
+</section>
+<!--Chrome section-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>
+                <div class="blue-indicator-tittle"></div>
+                Simplifica tu gestión y agiliza tus resultados en Chrome.
+            </h4>
+            <img class="img-chrome" src="assets/img/chrome.png" alt="Chrome">
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
+<section class="sectioncolour2">
+    <div class="container">
+        <div class="row">
+            <div class="quote-red">
+            <div>
+                <br>
+                <br>
+                <h5 class="white-tittle">La familia de productos Chrome se caracteriza por la velocidad, la seguridad y la fiabilidad; pero Edosoft Factory da un paso más allá para adaptar estos productos a las necesidades de cada empresa y hacerlos 100% productivos mediante la gestión completa de Canales Digitales</h5>
+                <br>
+                <br>
+            </div>
+                 <div style="margin-right:45px; margin-top:-45px;" class="col-md-8 rectangle-10 pull-right background-photo6 wow animated fadeInRight animated" alt="Chrome Family"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row margin-row">
+            <br>
+            <br>
+            <br>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/chromebook.png" alt="Chromebook">
+                <h6>Chromebook</h6>
+                <p> Chromebook. Ordenadores de uso sencillo, más rápidos y seguros.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/chromebit.png" alt="Chromebit">
+                <h6>Chromebit</h6>
+                <p>Chromebit. La llave para transformar cualquier pantalla en un ordenador.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/chromebox.png" alt="Chromebox">
+                <h6>Chromebox</h6>
+                <p>Chromebox. El dispositivo informático más compacto: tanto para el trabajo diario como para cartelería y kioscos.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/chromebase.png" alt="Chromebase">
+                <h6>Chromebase</h6>
+                <p>Chromebase. El all-in-one definitivo tanto en sobremesa como en quiosco.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Chrome for Work</h4>
+                <br>
+                <br>
+                <p>Dispositivos certificados por Google y desarrollados por fabricantes de primer nivel.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div
+                    class="col-md-8 rectangle-10 pull-right background-photo7 wow animated fadeInRight animated" alt="Desarrollo Móvil">
+
+            </div>
+        </div>
+        <div class="row">
+            <div
+                    class="col-md-8 rectangle-10 pull-left background-photo8 wow animated fadeInRight animated" alt="Chrome Family">
+
+            </div>
+            <div class="col-md-4">
+                <h4>Chrome for Meeetings</h4>
+                <br>
+                <br>
+                <p>Despliegue una sala de videoconferencias en minutos, podrá contactar con cualquiera, en cualquier dispositivo, para reuniones colaborativas más productivas. Con versiones de 10 y 25 asientos.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Chrome for Signage</h4>
+                <p>Cartelería digital con herramientas de gestión basadas en la nube. Potentes y asequibles players para cartelería digital, que utilizan procesadores de confianza de Intel y el sistema operativo de Google Chrome OS para ofrecer al usuario velocidad, sencillez, y posibilidad de adaptarlo a su propio proyecto.</p>
+            </div>
+            <div
+                    class="col-md-8 rectangle-10 pull-right background-photo9 wow animated fadeInRight animated" alt="Desarrollo Móvil">
+
+            </div>
+        </div>
+        <div class="row">
+            <div
+                    class="col-md-8 rectangle-10 pull-left background-photo10 wow animated fadeInRight animated" alt="Chrome Family">
+
+            </div>
+            <div class="col-md-4">
+                <h4>Chrome for Kiosk</h4>
+                <br>
+                <br>
+                <p>Dispositivos tanto para sus empleados como para sus clientes. Útil para tareas como TPV, Operaciones de Recursos Humanos o Check-In en eventos y Hoteles, entre otras.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-4">
+                    <h4>Gestor de Eventos y Actividades con Chrome.</h4>
+                    <p>La app de Edosoft Factory pensada para reducir los costes en la organización de diferentes eventos o actividades mediante el uso de la última tecnología de Google: checkinapp.edosoft.es</p>
+                </div>
+                <div
+                        class="col-md-8 rectangle-10 pull-right background-photo11 wow animated fadeInRight animated" alt="Desarrollo Móvil">
+
+                </div>
+        </div>
+        <div class="row">
+            <div
+                    class="col-md-8 rectangle-10 pull-left background-photo12 wow animated fadeInRight animated" alt="Chrome Family">
+
+            </div>
+            <div class="col-md-4">
+                <h4>Sasuke</h4>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Chrome section End-->
+<!--GCP section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4>
+                <div class="blue-indicator-tittle"></div>
+                Toda la innovación de Google a disposición de los desarrollos de tu empresa
+            </h4>
+            <img class="img-gcp" src="assets/img/google-cloud-platform.png" alt="Google Cloud Platform">
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
+<section class="sectioncolour2">
+    <div class="container">
+        <div class="row">
+            <div class="quote-yellow">
+                <div>
+                    <br>
+                    <br>
+                    <h5 class="white-tittle">Todo lo que necesitas para crear y escalar aplicaciones de la mano de Edosoft Factory. Con la innovación como filosofía base, los cambios se notan desde el primer momento, tanto en costes como en usabilidad</h5>
+                    <br>
+                    <br>
+                </div>
+                <div style="margin-right:45px; margin-top:-45px;" class="col-md-8 rectangle-10 pull-right background-photo12 wow animated fadeInRight animated" alt="Chrome Family"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row margin-row">
+            <br>
+            <br>
+            <br>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Resourses">
+                <h6>Recursos Informáticos</h6>
+                <p> Desde máquinas virtuales con una relación precio/rendimiento que ofrece ventajas probadas hasta una plataforma de desarrollo de aplicaciones totalmente administrada.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Storage">
+                <h6>Almacenamiento y bases de datos</h6>
+                <p>Almacenamiento de objetos y bases de datos escalables, resistentes y de alto rendimiento para tus aplicaciones.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Networking">
+                <h6>Redes</h6>
+                <p>Productos de red definidos mediante software de última generación en la red de fibra privada de Google.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Big Data">
+                <h6>Big Data</h6>
+                <p>Almacenamiento de datos totalmente administrado, procesamiento por lotes y de transmisiones, exploración de datos, Hadoop/Spark y mensajería fiable.</p>
+            </div>
+        </div>
+        <div class="row margin-row">
+            <br>
+            <br>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Machine Learning">
+                <h6>Aprendizaje automático</h6>
+                <p>Servicios de Machine Learning rápidos, escalables y fáciles de usar. Utiliza nuestros modelos ya preparados o prepáralos tú mismo a partir de tus datos.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="System Admin">
+                <h6>Herramientas de administración</h6>
+                <p>Supervisión, registro, diagnóstico y mucho más. Todo en una consola de administración web o una aplicación móvil muy fáciles de usar.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Development Tools">
+                <h6>Herramientas para desarrolladores</h6>
+                <p>Desarrolla e implementa tus aplicaciones con nuestra interfaz de línea de comandos y otras herramientas para desarrolladores.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product-chrome" src="assets/img/not-found.png" alt="Security">
+                <h6>Identidad y seguridad. </h6>
+                <p>Controla el acceso y la visibilidad de los recursos en una plataforma protegida por el modelo de seguridad de Google.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--GCP section end-->
+<!--About section end-->
+<section class="footer sectioncolour1">
+    <div class="container">
+        <div class="row">
+            <div class="quote-blue">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-12 rectangle-4">
+                <img class="img-responsive wow animated fadeInUp animated" src="assets/img/tmu.gif" alt="Contacto Edosoft Factory">
+                <div class="row">
+                    <div class="col-md-12 div-center">
+                        <p class="info-contact text-contact p-white">
+                            info@edosoft.es<br> Tel +34 828 021 575<br> Fax +34 828 066 081
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 div-center">
+                        <a class="btn btn-lg button-blue" href="https://www.google.es/maps/place/Calle+Antonio+Mar%C3%ADa+Manrique,+3,+35011+Las+Palmas+de+Gran+Canaria,+Las+Palmas/@28.1250282,-15.4401871,17z/data=!3m1!4b1!4m5!3m4!1s0xc40950e441745db:0xa21f99b41e7bb3ca!8m2!3d28.1250282!4d-15.4379984" target="_blank">Mapa</a>
+                    </div>
+                    <div class="col-md-12 div-center">
+                        <a class="btn btn-lg button-blue" href="mailto:info@edosoftfactory.com">Enviar correo</a>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline social-1">
+                        <li>
+                            <a href="http://plus.google.com/+EdosoftFactory" target="_blank">
+                                <i class="fa fa-google-plus fa-4x wow animated fadeInUp animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://facebook.com/edosoftfactory" target="_blank">
+                                <i class="fa fa-facebook fa-4x wow animated fadeInUp animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/edosoftfactory" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="http://linkedin.com/company/edosoft-factory" target="_blank">
+                                <i class="fa fa-linkedin wow animated fadeInUp animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vimeo.com/edolab" target="_blank">
+                                <i class="fa fa-vimeo-square wow animated fadeInUp animated"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://youtube.com/edosoftfactory" target="_blank">
+                                <i class="fa fa-youtube-play wow animated fadeInUp animated"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="col-md-4 col-sm-4 col-xs-4 margin20">
+                        <img src="assets/img/iso1-9001.png" class="wow animated fadeInUp animated logo" alt="ISO 9001">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 margin20">
+                        <img src="assets/img/iso1-14001.png" class="wow animated fadeInUp animated logo" alt="ISO 14001">
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 margin20">
+                        <img src="assets/img/iso1-27001.png" class="wow animated fadeInUp animated logo" alt="ISO 27001">
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span>&copy; 2017 Edosoft Factory S.L. Todos los derechos reservados.</span>
+                            <span>
+                                <a ui-sref="info"><span>Información legal.</span></a>
+                            </span>
+                            <span>
+                                <a ui-sref="home_en"><span class="active">English version</span></a>
+                                <!--TODO:Incluir link a página con info legal-->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

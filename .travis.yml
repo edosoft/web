@@ -1,0 +1,33 @@
+---
+sudo: required
+language: generic
+dist: trusty 
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y npm 
+  - sudo npm -g install grunt-cli karma bower
+
+install:
+  - npm install
+  - bower install
+  - grunt
+
+before_deploy:
+  - echo "deb http://packages.cloud.google.com/apt cloud-sdk-jessie main" | sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+  - curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  - sudo apt-get -qq update
+  - sudo apt-get install -y google-cloud-sdk
+  - echo $DEPLOY_KEY_FILE_PRODUCTION > /tmp/gcloud.json
+  - gcloud auth activate-service-account --key-file /tmp/gcloud.json
+  - gsutil defacl ch -u AllUsers:R gs://$GCS_BUCKET
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: gsutil -m rsync -d -r build/ gs://$GCS_BUCKET
+  on:
+    branch: master
+
+after_deploy:
+  - rm /tmp/gcloud.json

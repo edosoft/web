@@ -1,0 +1,15 @@
+<div class="carousel slide" data-ride="carousel" data-type="multi" id="news-articles">
+    <div class="carousel-inner" >
+        <div ng-repeat="feed in feeds" class="item" ng-class="{active: $index==0}">
+            <h1 class="text-center carousel-news-title"><a target="_new" href="" ng-bind-html="feed.title"></a></h1>
+            <p class="carousel-news-content" ng-bind-html="feed.content"></p>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#news-articles" data-slide="prev">
+        <span></span>
+    </a>
+    <a class="right carousel-control" href="#news-articles" data-slide="next">
+        <span>></span>
+    </a>
+</div>

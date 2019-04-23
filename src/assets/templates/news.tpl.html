@@ -1,0 +1,47 @@
+<div id="news-articles" class="carousel slide"  data-type="multi" data-interval="false">
+    <!--<ol class="carousel-indicators">
+        <li data-target="#news-articles" data-slide-to="0" class="active"></li>
+        <li data-target="#news-articles" data-slide-to="1"></li>
+        <li data-target="#news-articles" data-slide-to="2"></li>
+        <li data-target="#news-articles" data-slide-to="3"></li>
+        <li data-target="#news-articles" data-slide-to="4"></li>
+    </ol>-->
+
+    <div class="carousel-inner" style="height:650px;">
+        <div ng-repeat="feed in feeds" class="item"
+             ng-class="{active: $index==0}">
+            <div class=" col-md-4 col-sm-6 col-xs-12 newsbox">
+                <h4 class="text-center carousel-news-title tittle-height"><a class="tittle-blog" target="_blank" href={{feed.link}} ng-bind-html="feed.title"></a></h4>
+                <!--aquí va el autor-->
+                <div class="carousel-text">
+                    <span ng-bind-html="feed.creator" class="creator-date" class="nomblog"></span>
+                    <span ng-bind-html="feed.date"></span>
+
+                </div>
+                <hr>
+                <div class="carousel-boxtext">
+                <p ng-bind-html="feed.content" class="carousel-news-content feed-body "></p>
+                </div>
+
+                 <a class="btn btn-lg button-blue" href={{feed.link}} target="_blank">Leer más</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!--<div rn-carousel-indicators ng-if="feeds.length > 1" slides="feeds" rn-carousel-index="carouselIndex"></div>
+    <ul rn-carousel rn-carousel-index="carouselIndex22" rn-carousel-autoslide rn-carousel-buffered rn-carousel-controls class="carousel2">
+        <li ng-repeat="feed in feeds" class="item" ng-class="{active: $index==0}">
+            <div class="carousel-demo">
+                <h4 class="text-center"><a target="_new" href="" ng-bind-html="feed.title"></a></h4>
+                <p ng-bind-html="!summary ? feed.content : feed.contentSnippet"></p>
+            </div>
+        </li>
+    </ul>-->
+
+    <a class="left carousel-control" href="#news-articles" data-slide="prev">&lt;</a>
+
+    <a class="right carousel-control" href="#news-articles" data-slide="next">&gt;</a>
+
+</div>
+
